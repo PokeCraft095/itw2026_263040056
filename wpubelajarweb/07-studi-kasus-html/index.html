@@ -230,13 +230,57 @@
             </table>
         </section>
         <hr>
+        <!--Ticketing-->
         <section id="tickets">
             <h3>Get Your Tickets Here!</h3>
             <form>
                 <label for="fullname">Full Name:</label><br>
                 <input type="text" name="fullname" id="fullname" required autofocus autocomplete="off">
                 <br>
+                <label for="email">Email:</label><br>
+                <input type="email" name="email" id="email" required>
+                <br>
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" name="phone" id="phone" required autofocus autocomplete="off">
+                <br><br>
+                <!--Ticket inserting-->
+                <label><strong>Ticket Type:</strong></label><br>
+                <input type="radio" name="ticket_type" id="regular">
+                <label for="regular">Regular (Rp 500.000)</label>
+                <br>
+                <input type="radio" name="ticket_type" id="vip">
+                <label for="vip">VIP (Rp 1.500.000)</label>
+                <br>
+                <input type="radio" name="ticket_type" id="vvip">
+                <label for="vvip">VVIP (Rp 3.000.000)</label>
+                <br>
+                <label for="quantity">Quantity:</label><br>
+                <input type="number" name="quantity" id="quantity" min="1" max="10" value="1">
+                <br><br>
+                <label><strong>Day Pass:</strong></label><br>
+                <input type="checkbox" name="day1" id="day1">
+                <label for="day1">Day 1 - June 15 (Bernadya, Juicy Luicy & Nadin Amizah)</label>
+                <br>
+                <input type="checkbox" name="day2" id="day2">
+                <label for="day2">Day 2 - June 16 (Pamungkas, Bernadya & Hindia)</label>
+                <br>
+                <input type="checkbox" name="day3" id="day3">
+                <label for="day3">Day 3 - June 17 (Juicy Luicy, Pamungkas & .Feast)</label>
+                <br>
+                <button type="submit">Book Now!</button>
             </form>
+        </section>
+        <hr>
+        <!--Gallery-->
+        <section id="gallery">
+            <h3>Festival Highlights 2025</h3>
+            <ul>
+                <li>
+                    <figure>
+                        <img src="" alt="">
+                    </figure>
+                </li>
+            </ul>
         </section>
      </main>
 </body>
